@@ -11,75 +11,89 @@
 
     <header class="main-header">
         <div class="container">
-            <h1 class="name" id="home">Student Name</h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="about-me">
-                <img src="images/responsive-layout-profile.png" alt="A profile picture of me">
+            <div class="clearfix">
+                <h1 class="name" id="home">Student Name</h1>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div><!--/.clearfix-->
+            <div class="about-me clearfix">
+                <img class="profile-img" src="images/responsive-layout-profile.png" alt="A profile picture of me">
                 <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web develpment at Treehouse and am excited to put all my skills to use.</p>
-            </div>
-        </div>
+            </div><!--/.about-me clearfix-->
+        </div><!--/.container-->
     </header>
     
     <main>
-        <div class="container">
+        <div class="container clearfix">
             <h2 class="category-title" id="portfolio">Portfolio</h2>
-            <section>
+            <section class="col">
                 <img src="images/portfolio-1.png" alt="XXXXXXXXX">
                 <h3 class="section-title">Marketing Page</h3>
                 <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
             </section>
 
-            <section>
+            <section class="col">
                 <img src="images/portfolio-2.png" alt="XXXXXXXXX">
                 <h3 class="section-title">Search Page</h3>
                 <p>This project searches through a specific database to find information that the user is trying to look up.</p>
             </section>
 
-            <section>
+            <section class="col">
                 <img src="images/portfolio-3.png" alt="XXXXXXXXX">
                 <h3 class="section-title">Travel App</h3>
                 <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
             </section>
 
-            <section>
+            <section class="col">
                 <img src="images/portfolio-4.png" alt="XXXXXXXXX">
                 <h3 class="section-title">Map of Favourite Spots</h3>
                 <p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it-yourself walking tour.</p>
             </section>
 
-            <section>
+            <section class="col">
                 <img src="images/portfolio-5.png" alt="XXXXXXXXX">
                 <h3 class="section-title">Photo Gallery</h3>
                 <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
             </section>
 
-            <section>
+            <section class="col">
                 <img src="images/portfolio-6.png" alt="XXXXXXXXX">
                 <h3 class="section-title">Calculator</h3>
                 <p>Someone can enter in the numbers they want, and press the big blue button to get the result.</p>
             </section>
-        </div>
+        </div><!--/.container-->
+
+        
         <section id="contact" class="contact">
             <div class="container">
                 <h2 class="category-title">Contact</h2>
-                <p>If you're interested in chatting or want more information about what I've been wokring on, I'd love to hear from you!</p>
+                <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
                 <p>Phone <a href="tel:1-111-555-1234">+1(111)555-1234</a></p>
                 <p>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
-            </div>
+            </div><!--/.container-->
         </section>
+        
     </main>
 
     <footer class="main-footer">
-        <div class="container t-border">
-            <p>Student Name</p>
-            <a href="#home">Back to Top</a>
-        </div>
+        <div class="container clearfix">
+            <div class="t-border">
+                <p>Student Name</p>
+                <nav class="footer-nav">
+                    <a class="mobile" href="#home">Back to Top</a>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div><!--/.t-border-->
+        </div><!--/.container-->
     </footer>
   </body>
   </html>

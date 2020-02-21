@@ -16,12 +16,11 @@ body {
 
 img {
     max-width: 100%;
-    margin-bottom: 15px;
 }
 
 
 p {
-    font-size: 1.35rem;
+    font-size: 1.1rem;
     font-weight: 300;
 }
 
@@ -36,7 +35,7 @@ ul {
 
 }
 
-.main-nav li {
+.main-nav a {
     display: block;
     padding: 1rem 0;
     margin: .5rem 0;
@@ -64,12 +63,19 @@ ul {
 
 .section-title {
     font-size: 1.6rem;
+    margin-top: .5rem;
 }
 
 .category-title,
 .main-nav a,
 .main-footer p {
     font-size: 1.25rem;
+}
+
+.col img {
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .main-footer a {
@@ -82,16 +88,11 @@ ul {
     text-transform: uppercase;
 }
 
-.main-footer p {
-    display: inline-block;
-}
-
-
 .about-me p,
 .contact p {
+    font-size: 1.35rem;
     color: #989898;
 }
-
 
 .contact a {
     font-weight: 600;
@@ -100,8 +101,25 @@ ul {
 
 .t-border {
     border-top: 2px solid #dfe2e6;
+    padding-top: 1rem;
 }
 
+.profile-img {
+    max-width: 70%;
+}
+
+.footer-nav ul {
+    display: none;
+}
+
+.main-footer p {
+    float: left;
+    margin: 0;
+}
+
+.footer-nav {
+    float: right;
+}
 
 
 
@@ -120,6 +138,12 @@ ul {
     padding: 5%;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 
 
 /* ================================= 
@@ -134,21 +158,77 @@ ul {
 
 @media (min-width: 768px) {
 
-    .main-nav li {
+    .main-nav li,
+    .footer-nav li {
       display: inline-block;
-      background-color: transparent;
       margin: 0 1em;
+    }
+
+    .main-nav a {
+        background-color: transparent;
+    }
+
+    .profile-img {
+        float: right;
+        margin-left: 2.5rem;
+    }
+
+    .about-me p {
+        text-align: left;
+    }
+
+    .col {
+        float: left;
+        width: 50%;
+        padding-left: 1em;
+        padding-right: 1em;
+     
+    }
+
+    .contact .container {
+        padding: 5% 15%;
+    }
+
+      .mobile {
+          display: none;
+      }
+
+      .footer-nav ul {
+        display: inline-block;
+        margin: 0;
     }
 
 }
 
 @media (min-width: 1024px) {
 
-    .main-nav,
-    .name {
-        display: inline-block;
-      }
+    .container {
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+
+    .name { 
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    ul,
+    .main-nav a {
+        margin: 0;
+    }
+
+    .col {
+        width: 33.33%;
+     
+    }
+
+    .container {
+        padding: 2.5%;
+    }
   
   }
 
-}
+
